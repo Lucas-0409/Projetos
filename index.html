@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 id="title">Calculadora</h1>
+        <div class="calculadora">
+            <p id="resultado"></p>
+            <span></span>
+            <div class="display">
+                <div class="display-linha">
+                    <button onclick="adiciona(7)">7</button>
+                    <button onclick="adiciona(8)">8</button>
+                    <button onclick="adiciona(9)">9</button>
+                    <button style="color: #78b2bf" onclick="adiciona('/')">
+                        &divide;
+                    </button>
+                </div>
+                <div class="display-linha">
+                    <button onclick="adiciona(4)">4</button>
+                    <button onclick="adiciona(5)">5</button>
+                    <button onclick="adiciona(6)">6</button>
+                    <button style="color: #78b2bf" onclick="adiciona('*')">
+                        x
+                    </button>
+                </div>
+                <div class="display-linha">
+                    <button onclick="adiciona(1)">1</button>
+                    <button onclick="adiciona(2)">2</button>
+                    <button onclick="adiciona(3)">3</button>
+                    <button style="color: #78b2bf" onclick="adiciona('-')">
+                        -
+                    </button>
+                </div>
+                <div class="display-linha">
+                    <button style="color: #d93232" onclick="apagar()">C</button>
+                    <button onclick="adicionaZero(0)">0</button>
+                    <button class="botao-igual" onclick="igual()">=</button>
+                    <button style="color: #78b2bf" onclick="adiciona('+')">
+                        +
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
